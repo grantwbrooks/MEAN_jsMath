@@ -30,7 +30,7 @@
         function how_many_even(arr){
             var count = 0
             for(var i = 0; i<arr.length; i++){
-                if(is_even(arr[i]) == true){
+                if(is_even(arr[i])){
                     count += 1;
                 }
             }
@@ -44,7 +44,7 @@
         function create_dummy_array(n){
             var randoArr = [];
             for(i=0; i<n; i++){
-                randoArr[i] = Math.random()*10
+                randoArr[i] = Math.floor(Math.random()*10);
             }
             return randoArr
         }
