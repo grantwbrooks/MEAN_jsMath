@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // Math 1
+        function zero_negativity(arr){
+            if(Math.min.apply(null,arr)>=0){
+                return true;
+            }
+            else return false;
+        }
+        var x = [1,2,3]
+        console.log(zero_negativity(x))
+
+        // Math 2
+        function is_even(num){
+            if(num%2 === 0){
+                return true;
+            }
+            else return false;
+        }
+        var x = 5
+        console.log(is_even(x))
+
+        // Math 3
+        function how_many_even(arr){
+            var count = 0
+            for(var i = 0; i<arr.length; i++){
+                if(is_even(arr[i]) == true){
+                    count += 1;
+                }
+            }
+            return count;
+        }
+
+        var z = [1,2,3,4]
+        console.log(how_many_even(z))
+
+        // Math 4
+        function create_dummy_array(n){
+            var randoArr = [];
+            for(i=0; i<n; i++){
+                randoArr[i] = Math.random()*10
+            }
+            return randoArr
+        }
+        var a = 5
+        console.log(create_dummy_array(a))
+
+        // Math 5
+        function random_choice(arr){
+            return arr[Math.floor(Math.random()*arr.length)];
+        }
+
+        var b = [1,2,3,4]
+        console.log(random_choice(b))
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
